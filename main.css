@@ -1,0 +1,122 @@
+body {
+    background-color: lightgrey;
+    margin: 0px;
+    ;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "content"
+        "sidebar"
+        "footer"
+    ;
+
+    padding: 10px;
+    text-align: left;
+    background: #0000;
+    color: white;
+    flex-direction: column;
+}
+
+
+.navbar {
+    overflow: hidden;
+    /* Hide overflow */
+    background-color: lightgray;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar h4 {
+    float: left;
+    margin: 0px;
+    text-align: left;
+
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    /* Make sure that the links stay side-by-side */
+    display: block;
+    /* Change the display to block, for responsive reasons (see below) */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center the text */
+    padding: 2px 10px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove underline */
+    flex-direction: column;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+    /* Float a link to the right */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: none;
+    /* Grey background color */
+    color: #0001;
+    /* Black text color */
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-columns: 2fr 8fr;
+        grid-template-areas: "header header  header"
+        "nav    content sidebar"
+        "nav    content ad"
+        "footer footer  footer"
+
+        .content {
+            flex: auto;
+
+
+        }
+        
+
+
+@keyframes scroll {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -50px;
+  }
+}
+        
+        .container {
+  width: 100%;
+  height: 64px;
+  border-width: 1px;
+  border-style: solid;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  animation: scroll 5s linear infinite
+}
